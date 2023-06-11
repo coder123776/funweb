@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+:root{
+    /* colors */
+    --RGB-255: rgb(255,255,255);
+    --RGB-250: rgb(250,250,250);
+    --RGB-240: rgb(240, 240, 240);
+    --RGB-230: rgb(230, 230, 230);
+    --RGB-220: rgb(220, 220, 220);
+    --RGB-215: rgb(215, 215, 215);
+    --RGB-200: rgb(200, 200, 200);
+    --RGB-180: rgb(180, 180, 180);
+    --RGB-150: rgb(150, 150, 150);
+    --RGB-120: rgb(120, 120, 120);
+    --RGB-100: rgb(100, 100, 100);
+    --RGB-80: rgb(80, 80, 80);
+    --RGB-60: rgb(60, 60, 60);
+    --RGB-35: rgb(35, 35, 35);
+    --RGB-20: rgb(20, 20, 20);
+    --RGB-15: rgb(15, 15, 15);
+    --RGB-10: rgb(10, 10, 10);
+    --RGB-0: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* HEADER */
+
+/*dropdown*/
+.dropdown-parent{
+    position: fixed;
+    background-color: rgb(197, 197, 197);
+    height: 100%;
+    width: 30vw;
+    border-radius: 2vh;
+    margin-left: -30vw;
+    transition: 300ms;
+    z-index: 1000;
+}
+
+/*dropdown 2 profile*/
+.dropdown-porfile{
+    position: fixed;
+    top: 12vh;
+    opacity: 0;
+    right: 3vw;
+    padding: 2vh 1vw 2vh 1vw;
+    width: 13vw;
+    background-color: white;
+    border-radius: 1vh;
+    z-index: 1000;
+    transition: 500ms;
+    pointer-events: none;
+}
+.dropdown-profs{
+    height: 5vh;
+    width: 13vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    color: black;
+    transition: 300ms;
+}
+.dropdown-profs:hover{
+    color: blueviolet;
+}
+.dropdown-profs h1{
+    font-size: 1em;
+}
+
+/* navbody child 1 */
+.navbody{
+    top: 0;
+    height: 7vh;
+    width: 100%;
+
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--RGB-255);
+    transition: 300ms;
+    z-index: 10000;
+}
+
+.navbody-child1{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navbody-child1 .lines{
+    position: relative;
+    height: 7vh;
+    width: 5vw;
+    cursor: pointer;
+}
+.navbody-child1 .line{
+    position: absolute;
+    margin-bottom: 0.5vh;
+    margin-left: 1vw;
+    height: 1vh;
+    width: 4vw;
+    background-color: var(--RGB-255);
+    transition: 300ms;
+    border-radius: 0.5vh;
+}
+#line1{
+    margin-top: 1vh;
+}
+#line2{
+    margin-top: 3vh;
+}
+#line3{
+    margin-top: 5vh;
+}
+
+/* navbody child 2 */
+div.navbody-child2{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 7vh;
+    width: 4.5vw;
+    margin-left: 48vw;
+    overflow-y: hidden;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+}
+.navbody-child2 #logo{
+    width: 80%;
+    height: 90%;
+}
+
+/* navbody child 3 */
+
+div.navbody-child3{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+div.child3{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 7vh;
+    width: 10vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+}
+#userlog{
+    width: 15vw;
+}
+a.Headersignbuttons{
+    text-decoration: none;
+    color: var(--RGB-255);
+    font-weight: bold;
+    transition: 300ms;
+}
+a.Headersignbuttons:hover{
+    color: blueviolet;
+}
+/*icons options for user*/
+
+/*profile image*/
+.profileIcons{
+    height: 6vh;
+    width: 3vw;;
+    overflow: hidden;
+    cursor: pointer;
+}
+#userlog1{
+    border-radius: 50%;
+    border: 0.3vh;
+    border-style: solid;
+    border-color: var(--RGB-200);
+}
+/*on scroll*/
+.navactive{
+    background-color: rgb(250, 250, 250);
+}
+/*icons*/
+#headericon1,
+#headericon2,
+#headericon3{
+    cursor: pointer;
+    transition: 300ms;
+}
+#headericon1:hover,
+#headericon2:hover,
+#headericon3:hover{
+    color: blueviolet;
+}

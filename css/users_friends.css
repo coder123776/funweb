@@ -1,0 +1,253 @@
+:root{
+    --bodygraycolor: rgb(200, 200, 200);
+}
+body{
+    background: linear-gradient(0deg, white, blueviolet);
+}
+.profileText{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    color: white;
+}
+.profileText img{
+    height: 15vh;
+    width: 7.5vw;
+    border-radius: 50%;
+    margin-left: 6.25vw;
+    border: 0.5vh solid white;
+}
+.profileText h1{
+    height: 15vh;
+    margin-left: 6.25vw;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+}
+section.friend{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5vw;
+    color: white;
+}
+
+.friend-parent{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.friend-myfriends{
+    position: relative;
+    display: flex;
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    width: var(--bodywidth);
+}
+.friend-myfriends h1{
+    margin-left: 2vw;
+}
+.friend-search{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 7vh;
+    width: 60vw;
+    margin-bottom: 10vh;
+}
+.friendsearch{
+    height: 7vh;
+    width: 52vw;
+    padding-left: 2vw;
+    padding-right: 3vw;
+    margin-left: 1.5vw;
+    border: none;
+    border-radius: 1vh;
+    font-size: 2em;
+    outline: none;
+}
+.fbdy-parent{
+    position: relative;
+    width: 88vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.friend-request-body {
+    position: relative;
+    display: block;
+    padding-top: 1vh;
+    width: 88vw;
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: var(--bodygraycolor);
+    border-radius: 1vh 1vh 0vh 0vh;
+}
+
+.friendRequest {
+    display: inline-block;
+    height: 18vh;
+    width: 28vw;
+    margin: 1vh 0.5vw 1vh 0.5vw;
+    border-radius: 1vh;
+    background-color: white;
+}
+.friendRequest2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.rqimg{
+    height: 10vh;
+    width: 5vw;
+    border-radius: 50%;
+    margin: 2vh 1vw 2vh 1vw;
+}
+.rq1{
+    display: flex;
+    flex-direction: column;
+}
+.rq2 h1{
+    padding-top: 1vh;
+    height: 10vh;
+    position: relative;
+    white-space: normal;
+    font-weight: normal;
+    width: 20vw;
+    color: black;
+}
+.rq3{
+    margin-left: 2vw;
+}
+.rqbtn{
+    height: 5vh;
+    width: 5vw;
+    border: none;
+    border-radius: 10vh;
+    font-size: 100%;
+    cursor: pointer;
+    color: white;
+    margin-right: 0.5vw;
+    transition: 300ms;
+}
+#rqaccept{
+    background-color: blueviolet;
+}
+#rqdecline{
+    background-color: rgb(52, 45, 58);
+}
+#rqdismiss{
+    background: none;
+    border: 0.1vh solid black;
+    color: black;
+}
+.rqbtn:hover{
+    opacity: 0.5;
+}
+.friends-body{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--bodygraycolor);
+    border-radius: 0vh 0vh 1vh 1vh;
+    height: auto;
+    min-height: 25vh;
+}
+.friends-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2vh 0.5vw 2vh 1.75vw;
+    height: 20vh;
+    width: 10vw;
+    border-radius: 1vh;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+#addFbtn{
+    height: 25vh;
+}
+.friendcardBtn{
+    position: absolute;
+    bottom: 1vh;
+    height: 5vh;
+    width: 9vw;
+    border-radius: 18vh;
+    border: none;
+    background-color: blueviolet;
+    cursor: pointer;
+    transition: 300ms;
+    color: white;
+    font-size: 1em;
+}
+.friendcardBtn:hover{
+    opacity: 0.5;
+}
+.friends-card img{
+    margin-top: 2vh;
+    height: 10vh;
+    width: 5vw;
+    border-radius: 50%;
+}
+.friends-card h1{
+    margin-top: 2vh;
+    font-size: 1em;
+}
+.textYourfriends{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 3em;
+    height: 10vh;
+    width: 85vw;
+    padding-left: 3vw;
+    margin-left: 1vw;
+    background-color: var(--bodygraycolor);
+    color: black;
+}
+
+/*buttons*/
+.friend-options{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    width: 35vw;
+    padding-left: 50vw;
+}
+#highlhite5{
+    left: 2vw;
+    position: absolute;
+}
+
+#highlhite1{
+    border-bottom: 0.5vh solid black;
+}
+.navbuttontext{
+    cursor: pointer;
+    transition: 300ms;
+}
+.navbuttontext:hover{
+    color: blueviolet;
+}
+
+/*errors*/
+#nofriends,
+#nofriendRequest
+{
+    display: flex;
+    align-items: center;
+    margin-left: 3vw;
+    height: 10vh;
+    color: blueviolet;
+    font-size: 2em;
+    font-weight: normal;
+}

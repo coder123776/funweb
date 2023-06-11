@@ -1,0 +1,261 @@
+/*section one*/
+.headingtext{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: -30vw;
+    height: 10vh;
+    font-size: 2em;
+    color: white;
+    transition: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+.index-01{
+    position: relative;
+    padding-top: 7vh;
+    height: 60vh;
+    width: 100%;
+    background: linear-gradient(0deg, white, white);
+}
+.slider-parent{
+    position: relative;
+    height: 50vh;
+    width: 90vw;
+    margin-left: 5vw;
+}
+.card-parent{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: 300ms;
+    height: 50vh;
+    width: 90vw;
+}
+.card{
+    position: relative;
+    height: 40vh;
+    width: 20vw;
+    border-radius: 2vh;
+    /* margin: 0vh 1.25vw 0vh 1.25vw; */
+    cursor: pointer;
+    transition: 300ms;
+    overflow-y: hidden;
+}
+.card:hover{
+    margin-top: -1vh;
+}
+#row1{
+    margin-left: -90vw;
+}
+#row2{
+    margin-left: 0vw;
+}
+#row3{
+    margin-left: 90vw;
+}
+h1.card-text,
+p.card-text
+{
+    position: absolute;
+    font-size: 1em;
+    margin-left: 1vw;
+    margin-bottom: 4.5vh;
+    bottom: 0;
+    color: white;
+}
+p.card-text{
+    font-size: 0.8em;
+    margin-bottom: 1.5vh;
+}
+img.card-text{
+    height: 100%;
+    width: 100%;
+    transition: 300ms;
+}
+img.card-text:hover{
+    transform: scale(1.2);
+}
+
+/*section two*/
+.index-02{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+}
+.i02-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10vh;
+    width: 90vw;
+}
+.i02-nav-one{
+    display: flex;
+    flex-direction: row;
+}
+.navbuttontext{
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    height: 9.5vh;
+    cursor: pointer;
+    color: black;
+}
+.texthr{
+    height: 0.1vh;
+    background-color: black;
+}
+#highlhite1{
+    padding-left: 0vw;
+    border-bottom: 0.5vh solid black;
+}
+#highlhite1,
+#highlhite2,
+#highlhite3{
+    transition: 300ms;
+}
+.i02-nav-two{
+    display: flex;  
+    flex-direction: row;
+    align-items: center;
+}
+.divbutton{
+    height: 7vh;
+    width: 10vw;
+    border-radius: 2vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 0.2vh;
+    border-style: solid;
+    border-color: black;
+    cursor: pointer;
+}
+#button3{
+    margin-right: 0vw;
+}
+
+hr.i02{
+    width: 90vw;
+    background-color: rgb(200, 200, 200);
+}
+
+/*the table*/
+.table-parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    width: 90vw;
+}
+table.table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 40vw;
+    height: 20vh;
+}
+img.tableimg{
+    height: 15vh;
+    width: 7.5vw;
+    border-radius: 1vh;
+}
+
+table.table  td#table1, th#table1 {
+    text-align: center;
+    padding: 1vh 0.5vw;
+}
+table.table  td#table2, th#table2 {
+    text-align: right;
+    padding: 1vh 0.5vw;
+}
+table.table th{
+    color: gray;
+}
+tr#products{
+    transition: 300ms;
+    cursor: pointer;
+}
+tr#products:hover{
+    background-color: rgb(250, 250, 250);
+}
+
+/*section 3*/
+.index-03{
+    width: 90vw;
+    margin-left: 5vw;
+    overflow: visible;
+}
+.balk-parent{
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 0vw 10vh 0vw;
+    overflow: visible;
+}
+.balk-parent h1{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+.balk{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90vw;
+    height: 40vh;
+    padding-bottom: 10vh;
+    overflow: visible;
+}
+.kaart{
+    position: relative;
+    height: 40vh;
+    width: 17vw;
+    border-radius: 2vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 5px rgb(240, 240, 240);
+    transition: 300ms;
+    cursor: pointer;
+}
+.kaart:hover{
+    margin-top: -2vh;
+    box-shadow: 0px 0px 10px 5px rgb(220, 220, 220);
+}
+.kaart img{
+    height: 25vh;
+    width: 17vw;
+    border-radius: 2vh 2vh 0vh 0vh;
+}
+.kaart #k1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+}
+.kaart #k1 h1{
+    height: 7vh;
+    font-size: 1em;
+}
+.kaart #k2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.kaart #k3{
+    font-size: 1em;
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.kaart #k3 #gray{
+    font-size: 0.8em;
+    color: gray;
+}

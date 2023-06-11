@@ -1,0 +1,149 @@
+body{
+    background-image: url(../images/userLogg/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+div.popup{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    right: 20vw;
+    top: 15vh;
+    border: 0.5vh solid rgb(100, 100, 100);
+    border-radius: 1vh;
+    background-color: rgb(200, 200, 200, 0.5);
+    color: red;
+    opacity: 1;
+    scale: 0.1;
+    animation-name: jumpIn;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes jumpIn {
+    from {scale: 0.1;}
+    to {scale: 1;}
+  }
+
+div.logbody{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15vh;
+    height: 60vh;
+    width: 15vw;
+    padding: 4vh 2.5vw 0vh 2.5vw;
+    border-radius: 1vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 15px 1px rgb(231, 231, 231);
+}
+div.form-child{
+    position: relative;
+    padding-top: 2vh;
+    width: 15vw;
+    height: 35vh;
+}
+div.form-child label{
+    margin-top: 5vh;
+}
+input.input{
+    height: 3vh;
+    width: 85%;
+    margin-left: 10%;
+    border: none;
+    transition: 300ms;
+    outline: none;
+    background: none;
+}
+hr.hr{
+    margin-top: 0.3vh;
+    margin-bottom: 0.3vh;
+    height: 0.2vh;
+    background-color: rgb(132, 98, 255);
+    border: none;
+    transition: 500ms;
+}
+img.labelImg{
+    position: absolute;
+    height: 2vh;
+    width: 1vw;
+    margin-top: 0.5vh;
+    margin-left: 0.1vw;
+}
+p#forgtpass{
+    position: absolute;
+    right: 0;
+    margin-top: 2vh;
+}
+button.userbutton{
+    height: 5.5vh;
+    overflow-y: hidden;
+    width: 100%;
+    align-items: center;
+    border: none;
+    border-radius: 5vh;
+    cursor: pointer;
+    font-size: 200%;
+    font-weight: bold;
+    color: white;
+    background: rgb(255,0,204);
+    background: linear-gradient(90deg, rgba(255,0,204,1) 0%, rgba(190,0,255,1) 40%, rgba(0,255,254,1) 100%);
+    transition: 300ms;
+}
+button.userbutton2{
+    height: 5.5vh;
+    overflow-y: hidden;
+    width: 100%;
+    align-items: center;
+    border: none;
+    border-radius: 5vh;
+    cursor: pointer;
+    font-size: 200%;
+    font-weight: bold;
+    color: white;
+    background: rgb(255,0,204);
+    background: linear-gradient(90deg, rgba(255,0,204,1) 0%, rgba(190,0,255,1) 40%, rgba(0,255,254,1) 100%);
+    transition: 300ms;
+}
+button.userbutton:hover,
+button.userbutton2:hover{
+    background: rgb(43, 0, 255);
+    background: linear-gradient(90deg, rgba(190,0,255,1) 0%, rgba(0,255,254,1) 40%, rgba(255,0,204,1) 100%);
+}
+p#lastlast{
+    margin-top: 3vh;
+}
+a#lastlast{
+    text-decoration: none;
+    color: blueviolet;
+}
+p#Logerror{
+    position: absolute;
+    margin-top: 30vh;
+    width: 15vw;
+    text-align: center;
+    color: red;
+}
+
+/*header*/
+
+a.Headersignbuttons{
+    color: black;
+}
+.navbody-child1 .line{
+    background-color: black;
+}

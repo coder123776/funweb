@@ -1,0 +1,538 @@
+:root{
+    --border: 0.1vh solid rgb(200, 200, 200);
+}
+
+.backgr{
+    position: absolute;
+    height: 10vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.product-parent1,
+.product-parent2,
+.product-parent3{
+    margin-left: 2.5vw;
+    width: 95vw;
+    display: flex;
+}
+.product-parent1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15vh;
+}
+.parent-L,
+.parent-R,
+.prodImg{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.prodImg{
+    border-radius: 1vh 1vh 1vh 1vh;
+    border: var(--border);
+}
+.prod1,
+.prod1_1
+{
+    height: 7vh;
+    width: 38vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vh 1vw 0vh 1vw;
+}
+.prod1 span{
+    cursor: pointer;
+    transition: 300ms;
+}
+.prod1 span:hover{
+    opacity: 0.5;
+}
+.prod1_1{
+    width: 51vw;
+}
+.prod2{
+    height: 83vh;
+    width: 40vw;
+    border-radius: 0vh 0vh 1vh 1vh;
+}
+
+
+.product-parent2{
+    flex-direction: column;
+}
+.pname{
+    height: 10vh;
+}
+.Psocials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 6vw;
+    overflow: visible;
+}
+.Psocials span{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+    width: 2.5vw;
+    cursor: pointer;
+    transition: 300ms;
+    border-radius: 50%;
+}
+.Psocials span:hover{
+    box-shadow: 0px 0px 5px 1px rgb(200, 200, 200);
+}
+.Pmaininfo{
+    width: 38vw;
+    padding: 0vh 1vw 0vh 1vw;
+}
+.Pmaininfo h1{
+    font-size: 3em;
+    font-weight: normal;
+}
+.Pnav{
+    height: 10vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.views,
+.favorites,
+.likes,
+.likes2{
+    display: flex;
+    align-items: center;
+}
+.likes{
+    flex-direction: column;
+}
+.likes2{
+    flex-direction: row;
+}
+.precentage-parent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.precentage-parent p{
+    padding: 0vh 1vw 0vh 1vw;
+    font-size: 0.8em;
+}
+.precentage{
+    height: 1vh;
+    width: 5vw;
+    border-radius: 0.5vh;
+    background-color: rgb(200, 200, 200);
+}
+.sellers-parent,
+.owner-parent{
+    position: relative;
+    height: 53vh;
+    width: 50vw;
+    padding: 0vh 1vw 0vh 1vw;
+}
+.sellers,
+.ownerItems{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+}
+.sellersH1,
+.ownedItemsH1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    width: 90%;
+    margin-left: 5%;
+    font-size: 2em;
+}
+.ownedItemsH1{
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.product{
+    height: 10vh;
+    width: 50vw;
+    border-bottom: 0.1vh solid rgb(200, 200, 200);
+    margin: 0vh 0vw 4vh 0vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ownerInf,
+.buy-parent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0vh 1vw 0vh 1vw;
+    height: 10vh;
+}
+.owImg{
+    height: 8vh;
+    width: 4vw;
+    border-radius: 50%;
+    border: 0.1vh solid rgb(200, 200, 200);
+}
+.owName,
+.serial,
+.price{
+    padding: 0vh 1vw 0vh 1vw;
+}
+.buybutton,
+.sellItem,
+.sellItemConformation{
+    height: 7vh;
+    width: 7vw;
+    border-radius: 2vh;
+    border: 0.2vh solid rgb(100, 100, 100);
+    background: none;
+    cursor: pointer;
+    color: rgb(100, 100, 100);
+    transition: 300ms;
+    font-size: 1.5em;
+}
+.buyboutton:hover{
+    border: 0.2vh solid black;
+    color: black;
+}
+.ownerInf p{
+    color: rgb(200, 200, 200);
+}
+
+#headericon1,
+#headericon2,
+#headericon3{
+    color: black;
+}
+#line1,
+#line2,
+#line3
+{
+    background-color: black;
+}
+
+/*section 2*/
+.product-parent2{
+    padding-top: 5vh;
+}
+.price-history-parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    width: 94vw;
+    border: var(--border);
+    border-radius: 2vh;
+    overflow-y: hidden;
+}
+.price-history-parent h1{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    font-size: 2em;
+}
+.pricehistory{
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+}
+.GraphmyTable{
+    display: none;
+}
+
+/*prod parent 3*/
+.product-parent3{
+    flex-direction: column;
+}
+.moreFromDev,
+.Sponsored{
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    margin-top: 10vh;
+    border: var(--border);
+    border-radius: 2vh;
+}
+.devh1,
+.sponsorH1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5em;
+    padding-left: 2vw;
+    height: 10vh;
+    border-bottom: var(--border);
+}
+.devproducts,
+.sponsoredItems{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 53vh;
+    width: 100%;
+}
+.devcard,
+.sponsorCard{
+    display: flex;
+    flex-direction: column;
+    height: 45vh;
+    width: 15vw;
+    background-color: white;
+    border-radius: 1vh;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+    margin-left: 3.16vw;
+    box-shadow: 0px 0px 15px 2px rgb(230, 230, 230);
+    cursor: pointer;
+    transition: 300ms;
+}
+.devcard:hover,
+.sponsorCard:hover{
+    margin-top: 2vh;
+    box-shadow: 0px 0px 15px 2px rgb(200, 200, 200);
+}
+.devcard img,
+.sponsorCard img{
+    height: 30vh;
+    width: 100%;
+}
+.devcard p,
+.sponsorCard p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1vh;
+    padding-left: 1vw;
+    height: 4vh;
+}
+
+/*conformation screen*/
+.conform-sell-parent-blur{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 10000;
+}
+.conform-sell-parent{
+    position: relative;
+    height: 90%;
+    width: 80%;
+    border-radius: 2vh;
+    background-color: white;
+    box-shadow: 0px 0px 15px 5px rgb(100, 100, 100);
+    display: flex;
+    flex-direction: row;
+}
+.conform-sell-parent img,
+.conform-sell{
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+    height: 90%;
+    width: 40%;
+    border-radius: 1vh;
+}
+.conform-sell{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-weight: normal;
+    overflow: visible;
+}
+.sellingH1Conformation{
+    height: 10vh;
+}
+.productBeschrijving{
+    height: 30vh;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+}
+.conform{
+    position: absolute;
+    overflow: visible;
+    bottom: 0vh;
+}
+.conform
+.setItemValue::-webkit-inner-spin-button,
+.setItemValue::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.setItemValue{
+    height: 7vh;
+    width: 30vw;
+    padding-left: 2vw;
+    padding-right: 3vw;
+    border: none;
+    border-radius: 1vh;
+    font-size: 2em;
+    outline: none;
+    background-color: rgba(245, 245, 245);
+    margin-bottom: 5vh;
+}
+.sellItemConformation{
+    width: 35vw;
+    color: black;
+}
+.close{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+    width: 2.5vw;
+    top: 1vh;
+    right: 0.5vw;
+    cursor: pointer;
+}
+.discription,
+.developer,
+.progress,
+.discriptionC,
+.developerC,
+.progressC{
+    height: 10vh;
+    width: 40vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border-radius: 1vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: var(--border);
+    cursor: pointer;
+    background-color: rgba(255, 255, 255);
+    transition: 300ms;
+}
+.discriptionC,
+.developerC,
+.progressC{
+    height: auto;
+    width: 38vw;
+    padding: 5vh 1vw 5vh 1vw;
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    opacity: 0;
+}
+.discription:hover,
+.developer:hover,
+.progress:hover{
+    background-color: rgba(245, 245, 245);
+}
+.disc1{
+    display: flex;
+    flex-direction: row;
+    padding: 0vh 1vw 0vh 1vw;
+}
+#discriptionI,
+#developerI,
+#progressI{
+    transition: 300ms;
+}
+.show{
+    display: flex;
+}
+.noResellers{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 90%;
+    margin-left: 5%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: blueviolet;
+    box-shadow: 0px 0px 10px 10px rgba(245, 245, 245);
+}
+.productmedal{
+    position: absolute;
+    right: 1vw;
+    height: 10vh;
+    width: 15vw;
+    font-size: 50%;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#MedalBronze,
+#MedalSilver,
+#MedalGold,
+#MedalPlatinum,
+#MedalDiamond,
+#MedalElite,
+#MedalMaster,
+#MedalGrandMaster,
+#MedalLegendary {
+    width: 12vw;
+    background-color: white;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: bold;
+}
+#MedalLegendary {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #FF0000), color-stop(0.2, #FFA500), color-stop(0.4, #FFD700), color-stop(0.6, #FFA500), color-stop(0.8, #FF0000), color-stop(1, #FF0000));
+    animation: animatedBackground 2s linear infinite;
+}
+#MedalGrandMaster{
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #ff0073), color-stop(0.2, #ff006a), color-stop(0.4, #ff00b3), color-stop(0.6, #ff006a), color-stop(0.8, #ff0073), color-stop(1, #ff0073));
+    animation: animatedBackground 2s linear infinite;
+}
+#MedalMaster{
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #cc00ff), color-stop(0.2, #a200ff), color-stop(0.4, #9900ff), color-stop(0.6, #a200ff), color-stop(0.8, #cc00ff), color-stop(1, #cc00ff));
+    animation: animatedBackground 2s linear infinite;
+}
+#MedalElite{
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #44ff00), color-stop(0.2, #00ff59), color-stop(0.4, #00ffbf), color-stop(0.6, #00ff59), color-stop(0.8, #44ff00), color-stop(1, #44ff00));
+    animation: animatedBackground 2s linear infinite;
+}
+#MedalDiamond{
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #001aff), color-stop(0.2, #535eba), color-stop(0.4, #9397c1), color-stop(0.6, #535eba), color-stop(0.8, #001aff), color-stop(1, #001aff));
+    animation: animatedBackground 2s linear infinite;
+}
+#MedalPlatinum{
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #54bde0));
+    animation: animatedBackground 1s linear infinite;
+}
+#MedalGold{
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #FFD700));
+    animation: animatedBackground 1s linear infinite;
+}
+#MedalSilver{
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #565656));
+    animation: animatedBackground 1s linear infinite;
+}
+#MedalBronze{
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #000000));
+    animation: animatedBackground 1s linear infinite;
+}
+
+/* Animation rainbow background */
+@keyframes animatedBackground {
+    0% { background-position: 0vw; }
+    100% { background-position: 12vw; }
+}
